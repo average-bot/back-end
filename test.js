@@ -1,0 +1,1 @@
+navigator.geolocation.getCurrentPosition(pos => console.log(pos)); //find the location for the user.
