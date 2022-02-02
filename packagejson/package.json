@@ -1,0 +1,16 @@
+{
+  "name": "packagejson",
+  "version": "1.0.0",
+  "description": "This is a package json project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "practice",
+    "package",
+    "HKR"
+  ],
+  "author": "Sandra",
+  "license": "ISC"
+}
