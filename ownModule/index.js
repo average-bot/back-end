@@ -1,3 +1,8 @@
+
+/* const http = require('http');
+const http = require('path');
+console.log(http); */
+
 /* console.log('Hello there!!!'); */
 
 // Here we import the module
@@ -13,7 +18,7 @@ console.log(age);
 
 // Multiply 2 nums together
 const calculate = myModule.name.calc(10, 12);
-console.log(calculate);
+console.log('calculate: ', calculate);
 
 // Average
 const average = myModule.name.average(12, 11);

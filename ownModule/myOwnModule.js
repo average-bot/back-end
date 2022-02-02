@@ -9,9 +9,10 @@ function showAge(age) {
 }
 
 // Calculate numbers
-const calc = (num1, num2) => {
+/* const calc = (num1, num2) => {
     return num1 * num2;
-};
+}; */
+const calc = (num1, num2) => `number1: ${num1} & number2: ${num2} = ${num1 * num2}`;
 /* function calc2(num1, num2) {
     return num1 * num2;
 } */
