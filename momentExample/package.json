@@ -1,0 +1,20 @@
+{
+  "name": "momentexample",
+  "version": "1.0.0",
+  "description": "An example to use an external module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Sandra Kaljula",
+  "license": "ISC",
+  "dev": "nodemon app.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}

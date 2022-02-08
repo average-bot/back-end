@@ -1,0 +1,21 @@
+{
+  "name": "code_modules",
+  "version": "1.0.0",
+  "description": "Built in functionality of Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "built",
+    "in",
+    "node"
+  ],
+  "author": "Sandra Kaljula",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
