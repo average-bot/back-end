@@ -1,0 +1,22 @@
+{
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "Lab1 exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js",
+    "develop": "nodemon index.js"
+  },
+  "keywords": [
+    "node",
+    "random",
+    "luck"
+  ],
+  "author": "Sandra Kaljula",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.1.8",
+    "nodemon": "^2.0.15"
+  }
+}
