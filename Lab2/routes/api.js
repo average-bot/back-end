@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const faker = require('@faker-js/faker').default;
+//const faker = require('@faker-js/faker').default;
 const axios = require('axios').default; //used to make HTTP requests from node
 const crack = require('../crack');
+
 
 
 // opens the html from the public folder
@@ -10,6 +11,8 @@ const crack = require('../crack');
 router.get('/', (req, res) => {
     res.sendFile(`${process.cwd()}/public/index.html`);
 });
+
+
 
 
 // Json to the teachers blog
@@ -27,12 +30,13 @@ router.get('/teacher', async (req, res) => {
 // Generates a random password
 // http://localhost:1337/api/generate
 router.get('/generate', (req, res) => {
-    pw = [];
+    //pw = [];
     let password = crack.password.create_word();
     let tries = crack.password.get_tries(password.length, 26);
-    pw.push(password);
-    pw.push(tries);
-    res.json(pw);
+    //pw.push(password);
+    //pw.push(tries);
+    //res.json(pw);
+    res.json({ pw: password, tries: tries });
 });
 
 
@@ -46,4 +50,20 @@ router.get('/random20', (req, res) => {
     res.json(pws);
 });
 
+// generates a new password and shows the number of tries it takes ot crack
+function generate() {
+    console.log("wtf");
+    alert("dd");
+    /*
+    //const pw = new document.getElementById('password');
+    //const tries = new document.getElementById('tries');
+    let psswrd = crack.password.create_word();
+    let tries = crack.password.get_tries(psswrd, 26);
+    fetch('/generate', {
+        method: 'POST',
+        pw: psswrd,
+        tries: tries
+    });
+    */
+}
 module.exports = router;
