@@ -9,3 +9,5 @@ function generate() {
             document.getElementById('tries').innerHTML = `${passwords.tries}`;
         });
 }
+//generates a new password and tries when loaded.
+generate();

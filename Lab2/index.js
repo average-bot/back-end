@@ -12,11 +12,13 @@ application.use(morgan('dev'));
 const api = require('./routes/api'); // this is external route to out OWN API. Our module
 application.use(express.json()); // Enables the use of json
 application.use('/api', api); // this will be the endpoint for out API
+const info = require('./routes/info'); // this is external route to out OWN API. Our module
+application.use('/info', info); // this will be the endpoint for out API
 
 
 //open am html file from public
 application.use(express.static('public')); // Public will be the client side of out WebApp
-// http://localhost:1234/
+// http://localhost:1337/
 
 
 //Listen to the PORT

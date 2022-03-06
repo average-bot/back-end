@@ -6,15 +6,6 @@ const crack = require('../crack');
 
 
 
-// opens the html from the public folder
-// http://localhost:1337/api
-router.get('/', (req, res) => {
-    res.sendFile(`${process.cwd()}/public/index.html`);
-});
-
-
-
-
 // Json to the teachers blog
 // http://localhost:1337/api/teacher
 router.get('/teacher', async (req, res) => {
@@ -50,20 +41,5 @@ router.get('/random20', (req, res) => {
     res.json(pws);
 });
 
-// generates a new password and shows the number of tries it takes ot crack
-function generate() {
-    console.log("wtf");
-    alert("dd");
-    /*
-    //const pw = new document.getElementById('password');
-    //const tries = new document.getElementById('tries');
-    let psswrd = crack.password.create_word();
-    let tries = crack.password.get_tries(psswrd, 26);
-    fetch('/generate', {
-        method: 'POST',
-        pw: psswrd,
-        tries: tries
-    });
-    */
-}
+
 module.exports = router;
