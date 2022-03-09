@@ -12,6 +12,7 @@ application.use(morgan('dev'));
 const api = require('./routes/api'); // this is external route to out OWN API. Our module
 application.use(express.json()); // Enables the use of json
 application.use('/api', api); // this will be the endpoint for out API
+
 const info = require('./routes/info'); // this is external route to out OWN API. Our module
 application.use('/info', info); // this will be the endpoint for out API
 
